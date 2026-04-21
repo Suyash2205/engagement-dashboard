@@ -1,0 +1,1 @@
+{"total_students": 32593, "at_risk_count": 24124, "at_risk_pct": 74.0, "avg_engagement": 35.0, "dropout_rate": 31.2, "distinction_rate": 9.3, "active_modules": 7, "score_distribution": [{"range": "0-20", "count": 10200}, {"range": "20-40", "count": 10203}, {"range": "40-60", "count": 6387}, {"range": "60-80", "count": 3251}, {"range": "80-100", "count": 2552}]}
