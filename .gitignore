@@ -23,8 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
-# OULAD raw data & scripts (not needed for deployment)
-oulad_raw/
-generate_data.py
-process_oulad.py
+# OULAD large raw files (over GitHub 100MB limit)
+oulad_raw/studentVle.csv
+oulad_raw/anonymiseddata
 *.zip
