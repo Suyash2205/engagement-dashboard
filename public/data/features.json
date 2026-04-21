@@ -1,1 +1,67 @@
-[{"feature": "Days Active", "importance": 0.233, "direction": "positive"}, {"feature": "Weekly Click Rate", "importance": 0.211, "direction": "positive"}, {"feature": "Last Interaction Day", "importance": 0.195, "direction": "positive"}, {"feature": "Assessment Submission Rate", "importance": 0.186, "direction": "positive"}, {"feature": "Avg Assessment Score", "importance": 0.175, "direction": "positive"}]
+[
+  {
+    "feature": "Last Interaction Day",
+    "importance": 0.275,
+    "direction": "positive"
+  },
+  {
+    "feature": "Avg Assessment Score",
+    "importance": 0.2513,
+    "direction": "positive"
+  },
+  {
+    "feature": "Assessment Submission Rate",
+    "importance": 0.1243,
+    "direction": "positive"
+  },
+  {
+    "feature": "Days Active",
+    "importance": 0.112,
+    "direction": "positive"
+  },
+  {
+    "feature": "Weekly Click Rate",
+    "importance": 0.0985,
+    "direction": "positive"
+  },
+  {
+    "feature": "First Interaction Day",
+    "importance": 0.0441,
+    "direction": "negative"
+  },
+  {
+    "feature": "Studied Credits",
+    "importance": 0.0282,
+    "direction": "negative"
+  },
+  {
+    "feature": "Socioeconomic Band (IMD)",
+    "importance": 0.0254,
+    "direction": "positive"
+  },
+  {
+    "feature": "Education Level",
+    "importance": 0.0141,
+    "direction": "positive"
+  },
+  {
+    "feature": "Previous Attempts",
+    "importance": 0.0087,
+    "direction": "negative"
+  },
+  {
+    "feature": "Gender",
+    "importance": 0.0084,
+    "direction": "negative"
+  },
+  {
+    "feature": "Age Group",
+    "importance": 0.0061,
+    "direction": "positive"
+  },
+  {
+    "feature": "Disability",
+    "importance": 0.004,
+    "direction": "negative"
+  }
+]

@@ -1,0 +1,80 @@
+{
+  "algorithm": "Random Forest",
+  "n_estimators": 200,
+  "max_depth": 12,
+  "train_size": 26074,
+  "test_size": 6519,
+  "accuracy": 70.4,
+  "precision": 70.8,
+  "recall": 70.4,
+  "f1_score": 70.4,
+  "auc_roc": 91.3,
+  "specificity": 89.9,
+  "classes": [
+    "Distinction",
+    "Fail",
+    "Pass",
+    "Withdrawn"
+  ],
+  "trained_on": "2026-04-21",
+  "baselines": [
+    {
+      "name": "Logistic Regression",
+      "accuracy": 67.3,
+      "precision": 70.1,
+      "recall": 67.3,
+      "f1_score": 67.8,
+      "auc_roc": 90.2
+    },
+    {
+      "name": "Gradient Boosting",
+      "accuracy": 73.1,
+      "precision": 71.5,
+      "recall": 73.1,
+      "f1_score": 71.4,
+      "auc_roc": 91.6
+    },
+    {
+      "name": "Random Forest (selected)",
+      "accuracy": 70.4,
+      "precision": 70.8,
+      "recall": 70.4,
+      "f1_score": 70.4,
+      "auc_roc": 91.3
+    }
+  ],
+  "confusion_matrix": {
+    "labels": [
+      "Distinction",
+      "Fail",
+      "Pass",
+      "Withdrawn"
+    ],
+    "matrix": [
+      [
+        446,
+        1,
+        157,
+        1
+      ],
+      [
+        11,
+        657,
+        319,
+        424
+      ],
+      [
+        415,
+        129,
+        1927,
+        1
+      ],
+      [
+        1,
+        449,
+        22,
+        1559
+      ]
+    ]
+  }
+}

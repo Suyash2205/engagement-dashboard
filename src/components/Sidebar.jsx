@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import {
   LayoutDashboard, TrendingUp, Brain, Users,
@@ -16,6 +17,18 @@ const nav = [
 ]
 
 export default function Sidebar({ active, onSelect }) {
+  const [meta, setMeta] = useState(null)
+  useEffect(() => {
+    Promise.all([
+      fetch('/data/overview.json').then(r => r.ok ? r.json() : null).catch(() => null),
+      fetch('/data/model_metrics.json').then(r => r.ok ? r.json() : null).catch(() => null),
+    ]).then(([ov, mm]) => setMeta({ ov, mm }))
+  }, [])
+
+  const total = meta?.ov?.total_students?.toLocaleString() ?? '…'
+  const algo  = meta?.mm?.algorithm ?? 'Random Forest'
+  const f1    = meta?.mm?.f1_score != null ? (meta.mm.f1_score / 100).toFixed(2) : '…'
+
   return (
     <aside className="fixed left-0 top-0 h-screen w-60 flex flex-col glass border-r border-[rgba(0,212,255,0.1)] z-50">
       {/* Logo */}
@@ -63,8 +76,8 @@ export default function Sidebar({ active, onSelect }) {
 
       {/* Footer */}
       <div className="px-6 py-5 border-t border-[rgba(0,212,255,0.08)]">
-        <p className="text-[10px] text-[#2A4A6A] tracking-wide">OULAD Dataset · 32,593 Students</p>
-        <p className="text-[10px] text-[#2A4A6A] mt-0.5">Model: Random Forest · F1 0.87</p>
+        <p className="text-[10px] text-[#2A4A6A] tracking-wide">OULAD Dataset · {total} Students</p>
+        <p className="text-[10px] text-[#2A4A6A] mt-0.5">Model: {algo} · F1 {f1}</p>
       </div>
     </aside>
   )
