@@ -8,6 +8,7 @@ import Segmentation from './pages/Segmentation'
 import AtRisk from './pages/AtRisk'
 import Modules from './pages/Modules'
 import Demographics from './pages/Demographics'
+import DatasetExplorer from './pages/DatasetExplorer'
 
 const pages = {
   overview: Overview,
@@ -17,6 +18,7 @@ const pages = {
   atrisk: AtRisk,
   modules: Modules,
   demographics: Demographics,
+  dataset:      DatasetExplorer,
 }
 
 export default function App() {

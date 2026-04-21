@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import {
   LayoutDashboard, TrendingUp, Brain, Users,
-  AlertTriangle, BarChart2, PieChart, Activity
+  AlertTriangle, BarChart2, PieChart, Activity, Table2
 } from 'lucide-react'
 
 const nav = [
@@ -12,6 +12,7 @@ const nav = [
   { id: 'atrisk',       label: 'At-Risk Alerts',    icon: AlertTriangle },
   { id: 'modules',      label: 'Module Analysis',   icon: BarChart2 },
   { id: 'demographics', label: 'Demographics',       icon: PieChart },
+  { id: 'dataset',      label: 'Dataset Explorer',  icon: Table2 },
 ]
 
 export default function Sidebar({ active, onSelect }) {
